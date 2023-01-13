@@ -25,9 +25,3 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-    - uses: shallwefootball/s3-upload-action@master
-      with:
-        aws_key_id: ${{ AKIAVYCIHSL2DISUWEEE }}
-        aws_secret_access_key: ${{ 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}}
-        aws_bucket: ${{ earnin }}
-        source_dir: 'my-file.txt'
