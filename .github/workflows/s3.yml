@@ -1,12 +1,11 @@
 name: Upload to S3
-
 on: [workflow_dispatch]
 jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: shallwefootball/s3-upload-action@master
+      - uses: actions/checkout@v3
+      - uses: shallwefootball/s3-upload-action@v3
         with:
           aws_key_id: ${{ AKIAVYCIHSL2DISUWEEE }}
           aws_secret_access_key: ${{ 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}}
