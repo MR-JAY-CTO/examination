@@ -1,15 +1,15 @@
-name: Upload to S3
+# name: Upload to S3
 
-on: [pull_request]
+# on: [pull_request]
 
-jobs:
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: shallwefootball/s3-upload-action@master
-        with:
-          aws_key_id: ${{ secrets.AKIAVYCIHSL2DISUWEEE }}
-          aws_secret_access_key: ${{ secrets.CvrfRmIaSsWLQ2aLTQipXATKN4MJhtvA9t0H4PzO}}
-          aws_bucket: ${{ secrets.earnin }}
-          source_dir: 'my-file.txt'
+# jobs:
+#   upload:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@master
+#       - uses: shallwefootball/s3-upload-action@master
+#         with:
+#           aws_key_id: ${{ secrets.AKIAVYCIHSL2DISUWEEE }}
+#           aws_secret_access_key: ${{ secrets.CvrfRmIaSsWLQ2aLTQipXATKN4MJhtvA9t0H4PzO}}
+#           aws_bucket: ${{ secrets.earnin }}
+#           source_dir: 'my-file.txt'
